@@ -1,6 +1,7 @@
 import scrapy
 import json
 from os import path
+from stone_scrapy.items import EmpresaItem
 
 class CNPJSpider(scrapy.Spider):
     name = "cnpj"
@@ -12,4 +13,5 @@ class CNPJSpider(scrapy.Spider):
 
 
     def parse(self, response):
+        # yield EmpresaItem(json.loads(response.text))
         yield json.loads(response.text)
