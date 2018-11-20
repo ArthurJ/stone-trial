@@ -4,3 +4,4 @@ __pycache__/
 build
 project.egg-info/
 setup.py
+.ipynb_checkpoints/
