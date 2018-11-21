@@ -5,9 +5,7 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
-import os
-import sys
-from sqlalchemy import Column, Integer, String, Date, Float, PickleType
+from sqlalchemy import Column, Integer, String, Float, PickleType
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import create_engine
 
